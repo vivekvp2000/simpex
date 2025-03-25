@@ -9114,3 +9114,216 @@ textarea:-ms-input-placeholder {
 .progress-wrap-3 svg.progress-circle path {
   stroke: #ff5538;
 }
+.pricing-card-container * {
+  font-family: "Montserrat", sans-serif;
+}
+
+.pricing-card-container {
+  background: #f7f7ff;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.pricing-card-container .sub {
+  background: linear-gradient(135deg,
+          rgba(163, 168, 240, 1) 0%,
+          rgba(105, 111, 221, 1) 100%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 1.6rem;
+  width: 3.3rem;
+  border-radius: 1.6rem;
+  padding: 0.3rem;
+}
+
+.pricing-card-container .circle {
+  background-color: #fff;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+}
+
+.pricing-card-container .checkbox:checked+.sub {
+  justify-content: flex-end;
+}
+
+.pricing-card-container .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card-container .card {
+  background: #fff;
+  color: hsl(233, 13%, 49%);
+  border-radius: 0.8rem;
+}
+
+.pricing-card-container .cards .card.active {
+  background: linear-gradient(195deg, #086ad8 0%, #42b9ff 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.pricing-card-container ul {
+  margin: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pricing-card-container ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.pricing-card-container ul li.price {
+  font-size: 3rem;
+  color: hsl(232, 13%, 33%);
+  padding-bottom: 2rem;
+}
+
+.pricing-card-container .shadow {
+  box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card-container .card.active .price {
+  color: #fff;
+}
+
+.pricing-card-container .pricing-btn {
+  margin-top: 1rem;
+  height: 2.6rem;
+  width: 13.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: linear-gradient(195deg, #086ad8 0%, #42b9ff 100%);
+  color: #fff;
+  outline: none;
+  border: 0;
+  font-weight: bold;
+}
+
+.pricing-card-container .active-btn {
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+}
+
+.pricing-card-container .bottom-bar {
+  border-bottom: 2px solid hsla(240, 8%, 85%, 0.582);
+}
+
+.pricing-card-container .card.active .bottom-bar {
+  border-bottom: 2px solid hsla(240, 8%, 85%, 0.253);
+}
+
+.pricing-card-container .pack {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 980px) {
+  .pricing-card-container {
+      min-height: 100vh;
+  }
+}
+
+@media (max-width: 280px) {
+  .pricing-card-container ul {
+      margin: 1rem;
+  }
+
+  .pricing-card-container h1 {
+      font-size: 1.2rem;
+  }
+
+  .pricing-card-container .cards {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .pricing-card-container .card {
+      transform: scale(0.8);
+      margin-bottom: 1rem;
+  }
+
+  .pricing-card-container .cards .card.active {
+      transform: scale(0.8);
+  }
+}
+
+@media (min-width: 280px) and (max-width: 320px) {
+  .pricing-card-container ul {
+      margin: 20px;
+  }
+
+  .pricing-card-container .cards {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .pricing-card-container .card {
+      margin-bottom: 1rem;
+  }
+
+  .pricing-card-container .cards .card.active {
+      transform: scale(1);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .pricing-card-container .cards {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .pricing-card-container .card {
+      margin-bottom: 1rem;
+  }
+
+  .pricing-card-container .cards .card.active {
+      transform: scale(1);
+  }
+}
+
+@media (min-width: 414px) and (max-width: 768px) {
+  .pricing-card-container .card {
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+  }
+
+  .pricing-card-container .cards .card.active {
+      transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1046px) {
+  .pricing-card-container .cards {
+      display: flex;
+  }
+
+  .pricing-card-container .card {
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+  }
+
+  .pricing-card-container .cards .card.active {
+      transform: scale(1);
+  }
+}
