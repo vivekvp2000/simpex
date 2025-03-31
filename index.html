@@ -333,7 +333,8 @@
                                     than the state of the art commercial and non-commercial power electronics
                                     simulators.
                                 </p>
-                                <p class="mt-3">Very accurate. It works with a very small relative and absolute tolerance of 0.0001.
+                                <p class="mt-3">Very accurate. It works with a very small relative and absolute
+                                    tolerance of 0.0001.
                                     Very simple to use and integrate in Simulink. It is possible to tune the circuit
                                     parameters (the resistance, capacitor or inductor value etc.) during the simulation
                                     run either interactively or dynamically.</p>
@@ -381,6 +382,22 @@
                 <!-- About Wrapper Start -->
                 <div class="about-wrap">
                     <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-img">
+                                <div class="about-us-img">
+                                    <img src="./assets/images/image2.png" alt="">
+                                </div>
+                                <div class="simpix-about-content d-none">
+                                    <div>
+                                        <img src="./assets/images/image1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="./assets/images/image3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- About Image Wrap End -->
+                        </div>
                         <div class="col-lg-6">
                             <!-- About Content Wrap Start -->
                             <div class="about-content-wrap">
@@ -433,22 +450,6 @@
                                 <button class="btn simpix-read-more-btn px-4 fs-6 mt-3">Read More</button>
                             </div>
                             <!-- About Content Wrap End -->
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="about-img">
-                                <div class="about-us-img">
-                                    <img src="./assets/images/image2.png" alt="">
-                                </div>
-                                <div class="simpix-about-content d-none">
-                                    <div>
-                                        <img src="./assets/images/image1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="./assets/images/image3.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- About Image Wrap End -->
                         </div>
                     </div>
                 </div>
@@ -545,7 +546,8 @@
 
                                         </ul>
                                         <div class="pricing-btn">
-                                            <a class="btn" href="">Matlab License Number</a>
+                                            <a class="btn" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Get Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -564,7 +566,8 @@
                                                 purposes only. It can be ordered at price of -----EURO+VAT</li>
                                         </ul>
                                         <div class="pricing-btn">
-                                            <a class="btn" href="#">Matlab License Number</a>
+                                            <a class="btn" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Get Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -586,7 +589,8 @@
 
                                         </ul>
                                         <div class="pricing-btn">
-                                            <a class="btn" href="#">Matlab License Number</a>
+                                            <a class="btn" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Get Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -753,6 +757,26 @@
         <!-- back to top end -->
 
     </div>
+    <!-- Modal Css  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Matlab License</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="/" method="post">
+                        <div class="d-flex align-items-center gap-2">
+                            <input type="text" placeholder="Matlab License Number" class="form-control">
+                            <button class="btn px-4">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Css  -->
 
     <!-- JS
     ============================================ -->
@@ -780,6 +804,7 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 <script>
     const readMoreBtns = document.querySelectorAll('.read-more-btn');
     const readMoreContents = document.querySelectorAll('.hidden-content');
@@ -800,22 +825,19 @@
     const simpixBtn = document.querySelector('.simpix-read-more-btn');
     const simpixContent = document.querySelectorAll('.simpix-about-content');
 
-
     simpixBtn.addEventListener('click', function () {
-        simpixContent.forEach((content, i) => {
+        let isContentVisible = false;
+
+        simpixContent.forEach((content) => {
             content.classList.toggle('d-none');
+            if (!content.classList.contains('d-none')) {
+                isContentVisible = true;
+            }
         });
-    })
 
+        simpixBtn.textContent = isContentVisible ? 'Read Less' : 'Read More';
+    });
 
-    // readMoreBtn.addEventListener('click', function () {
-    //     readMoreContent.classList.toggle('d-none');
-    //     if (!readMoreContent.classList.contains('d-none')) {
-    //         readMoreBtn.innerText = 'Read Less';
-    //     } else {
-    //         readMoreBtn.innerText = 'Read More';
-    //     }
-    // });
 </script>
 
 
