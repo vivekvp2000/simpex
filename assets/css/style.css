@@ -112,7 +112,7 @@ input {
   outline: 0;
 }
 img {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 a:focus,
 button:focus,
@@ -3879,12 +3879,15 @@ textarea:-ms-input-placeholder {
 .techwix-cta-section-02 .cta-wrap .cta-btn {
   text-align: right;
 }
-
+.footer-section ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
 .techwix-cta-section-02 .cta-wrap .cta-btn .btn {
-  font-size: 22px;
+  font-size: 16px;
   background: #ffffff;
   color: #0e0e0e;
-  padding: 0 35px;
+  padding: 0 30px;
 }
 
 .techwix-cta-section-02 .cta-wrap .cta-btn .btn:hover {
@@ -6837,7 +6840,7 @@ textarea:-ms-input-placeholder {
 
 .contact-info-section .contact-info-wrap .single-contact-info {
   background: #f8f8f8;
-  padding: 50px 80px 75px;
+  padding: 50px 50px 75px;
   border-radius: 5px;
   margin-top: 30px;
 }
