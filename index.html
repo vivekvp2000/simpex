@@ -26,6 +26,19 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .img-content-box {
+            bottom: 0;
+            background: white;
+            padding: 9px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .contact-img {
+            max-width: 370px !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -360,13 +373,14 @@
                             <!-- About Content Wrap End -->
                         </div>
                         <div class="col-lg-6">
-                            <!-- About Image Wrap Start -->
-
-
-                            <div class="about-us-img">
+                            <div class="about-us-img about-img-content position-relative">
                                 <img src="assets/images/Screenshot 2025-03-22 161119.png" alt="">
+                                <div class="img-content-box position-absolute">
+                                    <p><strong>Sim-PEX</strong> is more than 1000 times faster than the state of the art
+                                        commercial and non-commercial power electronics simulators.
+                                    </p>
+                                </div>
                             </div>
-                            <!-- About Image Wrap End -->
                         </div>
                     </div>
                 </div>
@@ -384,15 +398,28 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="about-img">
-                                <div class="about-us-img">
+                                <div class="about-us-img position-relative">
                                     <img src="./assets/images/image2.png" alt="">
+                                    <div class="img-content-box position-absolute">
+                                        <p>Grid connected 3-phase101-level MMC</p>
+                                    </div>
                                 </div>
                                 <div class="simpix-about-content d-none">
-                                    <div>
+                                    <div class="position-relative">
                                         <img src="./assets/images/image1.png" alt="">
+                                        <div class="img-content-box position-absolute">
+                                            <p>The MMC-Converter after circuit partitioning into 6 arms C-S-function
+                                                blocks and one C-S-function block for the main circuit.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div>
+                                    <div class="position-relative">
                                         <img src="./assets/images/image3.png" alt="">
+                                        <div class="img-content-box position-absolute">
+                                            <p>Modelling the 101-Level MMC-Converter as 7 C-S-function blocks and the
+                                                Simulink MPI-Blockset.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -515,8 +542,11 @@
                     <div class="col-lg-6">
                         <!-- About Image Warp Start -->
                         <div class="about-img-warp-3">
-                            <div class="about-img about-img-big">
+                            <div class="about-img about-img-big position-relative">
                                 <img src="assets/images/opens.png" alt="">
+                                <div class="img-content-box position-absolute">
+                                    <p>Open Source Simulink Blockset</p>
+                                </div>
                             </div>
                         </div>
                         <!-- About Image Warp End -->
@@ -530,8 +560,12 @@
                     <div class="col-lg-6">
                         <!-- About Image Warp Start -->
                         <div class="about-img-warp-3">
-                            <div class="about-img about-img-big d-flex justify-content-start">
+                            <div class="about-img position-relative about-img-big d-flex justify-content-start">
                                 <img src="assets/images/simulink.png" alt="">
+                                <div class="img-content-box position-absolute">
+                                    <p>Simulink MPI-Blockset
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <!-- About Image Warp End -->
@@ -894,8 +928,10 @@
                             <!-- About Image Wrap Start -->
 
 
-                            <div class="about-us-img">
-                                <img src="assets/images/Screenshot 2025-03-22 161119.png" alt="">
+                            <div class="about-us-img d-flex align-items-center justify-content-center">
+                                <img class=" contact-img"
+                                    src="https://techysoar.com/wp-content/uploads/2024/04/contact-us-img-1024x1024.jpg"
+                                    alt="">
                             </div>
                             <!-- About Image Wrap End -->
                         </div>
